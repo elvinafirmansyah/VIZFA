@@ -1,0 +1,197 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+/*navbar*/
+.navbar{
+	background-color: black;
+}
+.navbar .navbar-nav .nav-item a{
+	color: white;
+	font-size: 18px;
+	margin-right: 20px;
+}
+.navbar .navbar-nav .nav-item a:hover{
+	color: #FFB5A7;
+}
+.navbar .navbar-nav{
+	padding-right: 100px;
+}
+/*jumbotron*/
+.jumbotron{
+	background-image: url(img/back.png);
+	background-size: cover;
+	height: 680px;
+}
+.jumbotron .jumbotron-isi h1{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	padding-top: 10rem;
+}
+.jumbotron .jumbotron-isi h3{
+	color: #FEC89A;
+	font-family: 'Poppins', sans-serif;
+	font-size: 24px;
+	font-weight: 100;
+	padding-bottom: 20px;
+}
+.jumbotron .jumbotron-isi a{
+	background: linear-gradient(to right, #FFB5A7, #FEC89A);
+	border-radius: 0%;
+	color: white;
+	padding: 13px 35px;
+	font-size: 22px;
+	font-weight: 500;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.jumbotron .jumbotron-isi a:hover{
+	background: linear-gradient(to right, #FEC89A, #FFB5A7);
+}
+/*about*/
+#about{
+	padding-top: 6rem;
+}
+.style-title h1{
+	text-transform: capitalize;
+	font-size: 48px;
+	font-weight: 550;
+}
+.card-style{
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+.isi-card{
+	text-transform: capitalize;
+	font-size: 17px;
+	font-weight: 530;
+}
+.kartu{
+	border-radius: 0%;
+	border: none;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/*style*/
+.style{
+	background-image: url(img/style.png);
+	background-size: cover;
+	height: 90vh;
+}
+.about-title{
+	padding-top: 2rem;
+	text-transform: capitalize;
+	font-size: 48px;
+	font-weight: 550;
+	color: white;
+	padding-bottom: 1vh;
+}
+.coolstyle p{
+	font-size: 17px;
+	color: white;
+	padding-bottom: 0.5rem;
+}
+.coolstyle a{
+	background: linear-gradient(to right, #FFB5A7, #FEC89A);
+	border-radius: 0%;
+	color: white;
+	padding: 13px 35px;
+	font-size: 22px;
+	font-weight: 500;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.coolstyle a:hover{
+	background: linear-gradient(to right, #FEC89A, #FFB5A7);
+	color: white;
+}
+/*Product*/
+.product-sub{
+	padding-top: 5.5rem;
+	text-transform: capitalize;
+	font-size: 24px;
+	color: #C6C6C6;
+}
+.product-title{
+	text-transform: capitalize;
+	font-size: 48px;
+	font-weight: 550;
+	color: black;
+	padding-bottom: 4rem;
+}
+.card-product .card{
+	border: none;
+	border-radius: 0%;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-product .card img{
+	border-radius: 0%;
+}
+.card-product{
+	padding-bottom: 2.5rem;
+}
+.kartuisi h5{
+	text-transform: capitalize;
+	font-weight: 450;
+	font-size: 16px;
+}
+.kartuisi h6{
+	color: #FFB5A7;
+	font-size: 17px;
+	font-weight: 400;
+}
+.star-icon{
+	padding-bottom: 8px;
+}
+.kartuisi .star-icon i{
+	color: #EFCD19;
+	width: 20px;
+	height: 15px;
+}
+.star-icon a{
+	color: black;
+	text-decoration: none;
+}
+.kartuisi .btn{
+	background: linear-gradient(to right, #FFB5A7, #FEC89A);
+	border-radius: 0%;
+	color: white;
+}
+.kartuisi .btn:hover{
+	background: linear-gradient(to right, #FEC89A, #FFB5A7);
+}
+/*deskop version*/
+@media (min-width: 992px) {
+	.navbar .container-fluid img{
+		padding-left: 100px;
+		width: 210px;
+		height: 42px;
+	}
+	.jumbotron .jumbotron-isi{
+		padding-top: 5rem;
+	}
+	.jumbotron .jumbotron-isi h1{
+		width: 40%;
+	}
+	.navbar{
+		background-color: white;
+	}
+	.navbar .navbar-nav .nav-item a{
+		color: black;
+	}
+	.coolstyle p{
+		font-size: 27px;
+		color: white;
+	}
+	.about-title{
+		padding-top: 5rem;
+		padding-bottom: 3vh;
+	}
+	.product-card{
+		padding-bottom: 2rem;
+		padding: 0 12rem 3rem 12rem;
+	}
+	.style{
+		height: 70vh;
+	}
+}
