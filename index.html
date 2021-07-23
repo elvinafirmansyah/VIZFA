@@ -9,8 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!--Link AOS Scroll Animations-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!--Font Awasome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!--font google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,12 +35,10 @@
     <title>VINZFA</title>
   </head>
   <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-         <a class="navbar-brand" href="#">
-          <img src="img/logovin.png" alt="" width="120" height="40" class="d-inline-block align-text-top">
-         </a>
+        <a class="navbar-brand" href="#"><img src="img/brand.png" width="63" height="36" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,12 +66,13 @@
         </div>
       </div>
     </nav>
-    <!--akhir navbar-->
+    <!-- AR Navbar -->
 
     <!--Jumbotron-->
     <section id="home">
       <div class="jumbotron jumbotron-fluid">
-        <div class="container jumbotron-isi">
+        <div class="container jumbotron-isi" data-aos="fade-right" data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="600">
           <h1 class="display-4">Your Fashion are our Inspiration</h1>
           <h3 class="lead">*Starts from $69.99</h3>
           <a href="#" class="btn text-center">GET NOW !!</a>
@@ -79,11 +84,11 @@
     <!--about-->
     <section id="about">
       <div class="container">
-          <div class="style-title text-center">
+          <div class="style-title text-center" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1750">
             <h1>why should you choose us</h1>
           </div>
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-4 card-style d-flex justify-content-center">
+            <div class="col-lg-4 card-style d-flex justify-content-center" data-aos="fade-up" data-aos-duration="650">
               <div class="card kartu"  style="width: 378px;">
                 <img src="img/bahan.jpg" style="height: 540px;" class="card-img-top" alt="...">
                 <div class="card-body text-center">
@@ -91,7 +96,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 card-style d-flex justify-content-center">
+            <div class="col-lg-4 card-style d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1650"  data-aos-delay="500">
               <div class="card kartu" style="width: 378px;">
                 <img src="img/gaya.jpeg"  style="height: 540px;" class="card-img-top" alt="...">
                 <div class="card-body text-center">
@@ -99,7 +104,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 card-style d-flex justify-content-center">
+            <div class="col-lg-4 card-style d-flex justify-content-center" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700">
               <div class="card kartu" style="width: 378px;">
                 <img src="img/gaya.jpg"  style="height: 540px;" class="card-img-top" alt="...">
                 <div class="card-body text-center">
@@ -112,27 +117,35 @@
     </section>
     <!--Akhir about-->
 
-    <!--Style-->
+    <!--style-->
     <section id="style">
-      <div class="style">
-        <div class="container coolstyle">
-          <h1 class="about-title text-center">An Elegant Style</h1>
-          <p class="d-flex justify-content-center">VINZFA has a motto that always pays attention to quality, price, materials and style. We always check every item that will reach the consumer. VINZFA always pays attention to our designers so as not to make mistakes in product manufacturing. We also pay attention to the design style used for our products so that the style that VINZFA makes never disappoints consumers.</p>
-          <a href="#" class="btn text-center">OUR PRODUCT</a>
-        </div>
+      <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 d-flex justify-content-center content-img"  data-aos="fade-right" data-aos-duration="1750">
+              <img src="img/ilustrasi.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center">
+              <div class="isi-content" data-aos="fade-left" data-aos-duration="1750" data-aos-delay="300">
+                <h1 class="kenapa1">An Elegant Style</h1><hr>
+                <p class="kenapa2">VINZFA has a motto that always pays attention to quality, price, materials and style. We always check every item that will reach the consumer. VINZFA always pays attention to our designers so as not to make mistakes in product manufacturing. We also pay attention to the design style used for our products so that the style that VINZFA makes never disappoints consumers.</p>
+                <a href="#" class="btn text-center">OUR PRODUCT</a>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
-    <!--AKhir Style-->
-    <!--product-->
+    <!-- AR style -->
+
+    <!-- Product -->
     <section id="product">
-      <div class="product">
-        <div class="container">
-          <h5 class="product-sub text-center">OUR PRODUCT</h5>
-          <h1 class="product-title text-center">Get your perfect Fashion</h1>
+      <div class="container">
+        <div class="product-title text-center" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1750">
+          <h5>OUR PRODUCT</h5>
+          <h1>Get Your Perfect Fashion</h1>
         </div>
-        <div class="row d-flex justify-content-center product-card">
-          <div class="col-lg-4 d-flex justify-content-center card-product">
-            <div class="card" style="width: 265px;">
+        <div class="row justify-content-center d-flex product-card" data-aos="fade-right" data-aos-duration="1500">
+          <div class="col-lg-4 justify-content-center d-flex colnya">
+            <div class="card card-product" style="width: 18rem; height: 450px">
               <img src="img/product2.jpg" class="card-img-top" alt="...">
               <div class="card-body kartuisi">
                 <h5 class="card-title">bazron Yellow dress</h5>
@@ -144,8 +157,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 d-flex justify-content-center card-product">
-            <div class="card" style="width: 265px;">
+          <div class="col-lg-4 justify-content-center d-flex colnya">
+            <div class="card card-product" style="width: 18rem; height: 450px">
+              <img src="img/product1.jpg" class="card-img-top" alt="...">
               <div class="card-body kartuisi">
                 <h5 class="card-title">TealTosca Bucket Hat</h5>
                 <h6 class="card-text">$16.99</h6>
@@ -154,11 +168,10 @@
                   </div>
                 <a href="#" class="btn">BUY NOW</a>
               </div>
-              <img src="img/product1.jpg" class="card-img-bottom" alt="...">
             </div>
           </div>
-          <div class="col-lg-4 d-flex justify-content-center card-product">
-            <div class="card" style="width: 265px;">
+          <div class="col-lg-4 justify-content-center d-flex colnya">
+            <div class="card card-product" style="width: 18rem; height: 450px">
               <img src="img/product3.jpg" class="card-img-top" alt="...">
               <div class="card-body kartuisi">
                 <h5 class="card-title">HY Pants Striped White Black </h5>
@@ -170,51 +183,280 @@
               </div>
             </div>
           </div>
-          <!--sesi2-->
-          <div class="col-lg-4 col-md-4 d-flex justify-content-center card-product">
-            <div class="card" style="width: 265px;">
-              <div class="card-body kartuisi">
-                <h5 class="card-title">white stump t-shirt</h5>
-                <h6 class="card-text">$11.34</h6>
-                  <div class="star-icon">
-                    <a href="#"><i class="bi bi-star-fill"></i>  4.7 | (74)</a>
-                  </div>
-                <a href="#" class="btn">BUY NOW</a>
-              </div>
-              <img src="img/product4.jpg" class="card-img-bottom" alt="...">
-            </div>
-          </div>
-          <div class="col-lg-4 d-flex justify-content-center card-product">
-            <div class="card" style="width: 265px;">
-              <img src="img/product6.jpg" class="card-img-top" alt="...">
-              <div class="card-body kartuisi">
-                <h5 class="card-title">gray T-zorC Shoes</h5>
-                <h6 class="card-text">$49.99</h6>
-                  <div class="star-icon">
-                    <a href="#"><i class="bi bi-star-fill"></i> 4.9 | (457)</a>
-                  </div>
-                <a href="#" class="btn">BUY NOW</a>
+          <!-- sesi2 -->
+          <div class="row justify-content-center d-flex  sesi2" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+            <div class="col-lg-4 justify-content-center d-flex colnya">
+              <div class="card card-product" style="width: 18rem; height: 450px">
+                <img src="img/product4.jpg" class="card-img-top" alt="...">
+                <div class="card-body kartuisi">
+                  <h5 class="card-title">white stump t-shirt</h5>
+                    <h6 class="card-text">$11.34</h6>
+                      <div class="star-icon">
+                        <a href="#"><i class="bi bi-star-fill"></i>  4.7 | (74)</a>
+                      </div>
+                    <a href="#" class="btn">BUY NOW</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-4 d-flex justify-content-center card-product">
-            <div class="card" style="width: 265px;">
-              <div class="card-body kartuisi">
-                <h5 class="card-title">TealTosca Bucket Hat</h5>
-                <h6 class="card-text">$16.99</h6>
-                  <div class="star-icon">
-                    <a href="#"><i class="bi bi-star-fill"></i>  4.6 | (256)</a>
-                  </div>
-                <a href="#" class="btn">BUY NOW</a>
+            <div class="col-lg-4 justify-content-center d-flex colnya">
+              <div class="card card-product" style="width: 18rem; height: 450px">
+                <img src="img/product6.jpg" class="card-img-top" alt="...">
+                <div class="card-body kartuisi">
+                  <h5 class="card-title">gray T-zorC Shoes</h5>
+                    <h6 class="card-text">$49.99</h6>
+                      <div class="star-icon">
+                        <a href="#"><i class="bi bi-star-fill"></i> 4.9 | (457)</a>
+                      </div>
+                    <a href="#" class="btn">BUY NOW</a>
+                </div>
               </div>
-              <img src="img/product7.jpg" class="card-img-bottom" alt="...">
+            </div>
+            <div class="col-lg-4 justify-content-center d-flex colnya">
+              <div class="card card-product" style="width: 18rem; height: 450px">
+                <img src="img/product7.jpg" class="card-img-top" alt="...">
+                <div class="card-body kartuisi">
+                  <h5 class="card-title">TealTosca Bucket Hat</h5>
+                    <h6 class="card-text">$16.99</h6>
+                      <div class="star-icon">
+                        <a href="#"><i class="bi bi-star-fill"></i>  4.6 | (256)</a>
+                      </div>
+                    <a href="#" class="btn">BUY NOW</a>
+                </div>
+              </div>
             </div>
           </div>
-          <!--selesai-->
         </div>
       </div>
     </section>
-    <!--akhir product-->
+    <!-- AR Product -->
+
+     <!--Proccess-->
+    <section id="process">
+      <div class="container">
+        <div class="row justify-content-center d-flex process">
+          <div class="col-lg-3 col-md-3 justify-content-center d-flex process-card">
+            <div class="ikon-procces" data-aos="zoom-in" data-aos-duration="1000">
+              <i class="bi bi-truck fa-3x text-center"></i>
+              <h2 class="text-center">FREE SHIPPING</h2>
+              <h5 class="text-center">From all orders over $100</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 justify-content-center d-flex process-card">
+            <div class="ikon-procces" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
+              <i class="bi bi-arrow-repeat fa-3x text-center"></i>
+              <h2 class="text-center">FREE RETURNS</h2>
+              <h5 class="text-center">Return money within 30 days</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 justify-content-center d-flex process-card">
+            <div class="ikon-procces" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
+              <i class="bi bi-lock fa-3x text-center"></i>
+              <h2 class="text-center">SECURE SHOPPING</h2>
+              <h5 class="text-center">You're in safe hands</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 justify-content-center d-flex process-card">
+            <div class="ikon-procces" data-aos="zoom-in" data-aos-duration="1900" data-aos-delay="700">
+              <i class="bi bi-tag fa-3x text-center"></i>
+              <h2 class="text-center">OVER 16,000 STYLES</h2>
+              <h5 class="text-center">We have everything you need</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Proccess-->
+
+    <!--blog-->
+    <section id="blog">
+      <div class="container">
+        <div class="blog-title" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1750">
+          <h5 class="title text-center">OUR BLOG</h5>
+          <h1 class="sub-title text-center">Latest in Blog</h1>
+        </div>
+        <div class="row d-flex justify-content-center blog-card">
+          <div class="col-lg-4 d-flex justify-content-center dalam-blog"  data-aos="fade-right" data-aos-duration="2000">
+            <div class="card" style="width: 20rem;">
+              <img src="img/blog1.jpg" class="card-img-top" alt="...">
+              <div class="card-isi">
+                <p>Fashion / jun 19, 2017</p>
+                <h5>Us yielding Fish sea night night the said him two</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center dalam-blog" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+           <div class="card" style="width: 20rem;">
+            <img src="img/blog2.jpg" class="card-img-top" alt="...">
+            <div class="card-isi">
+              <p>Travel / Des 13, 2018</p>
+              <h5>Tree earth fowl given moveth deep lesser After</h5>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-4  d-flex justify-content-center dalam-blog"  data-aos="fade-left" data-aos-duration="2000">
+            <div class="card" style="width: 20rem;">
+              <img src="img/blog3.jpg" class="card-img-top" alt="...">
+              <div class="card-isi">
+                <p>Lifestyle / Jan 21, 2019</p>
+                <h5>Given Set was without from god divide rule Hath</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir blog-->
+
+    <!--contact-->
+    <section id="contact">
+      <div class="container">
+        <div class="title-contact text-center" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1750">
+          <h1>Contact</h1>
+          <p>we have simple contact,
+If you want to order our products, please contact below</p>
+        </div>
+        <div class="row d-flex justify-content-center phone-contact" data-aos="fade-right" data-aos-duration="1500">
+          <div class="col-lg-12 d-flex justify-content-center contact-isi">
+            <h3>Phone:<a href="#" class="btn phone-button">+62 855 0972 7481</a></h3>
+          </div>
+          <div class="row d-flex justify-content-center contact-isi2" data-aos="fade-left" data-aos-duration="1600" data-aos-delay="400">
+            <div class="col-lg-2 d-flex justify-content-center">
+            <a href="#"><i class="bi bi-facebook fa-2x"></i></a>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-center">
+            <a href="#"><i class="bi bi-instagram fa-2x"></i></a>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-center">
+            <a href="#"><i class="bi bi-twitter fa-2x"></i></a>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-center">
+            <a href="#"><i class="bi bi-envelope-fill fa-2x"></i></a>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-center">
+            <a href="#"><i class="bi bi-youtube fa-2x"></i></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-5">
+        <!--Grid row-->
+        <div class="row justify-content-center footer-card">
+          <!--Grid column-->
+          <div class="col-lg-4 footer-isi" data-aos="zoom-in" data-aos-duration="1000">
+            <h5 class="text-uppercase">CATERGORIES</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="hb">BLOG</a>
+              </li>
+              <li>
+                <a href="#!" class="hb">FASHION</a>
+              </li>
+              <li>
+                <a href="#!" class="hb">HISTORY</a>
+              </li>
+              <li>
+                <a href="#!" class="hb">STORY</a>
+              </li>
+              <li>
+                <a href="#!" class="hb">TRAVEL</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 footer-isi" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
+            <h5 class="text-uppercase">LATEST NEWS</h5>
+
+            <ul class="list-unstyled isi-lagi">
+              <li>
+                <a href="#!" class="hb">THE KEYS TO QUALITRY RESTORATIONS</a>
+              </li>
+              <li>
+                <a href="#!" class="hb">10 SAILING DESTINATIONS SURE TO INSPIRE AWE</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 footer-isi" data-aos="zoom-in"data-aos-duration="1000" data-aos-delay="700">
+            <h5 class="text-uppercase">TOP PRODUCT</h5>
+
+            <ul class="list-unstyled text-uppercase">
+              <li>
+                <a href="#!" class="hb">bazron Yellow dress</a>
+              </li>
+              <li>
+                <a href="#!" class="hb">TealTosca Bucket Hat  </a>
+              </li>
+              <li>
+                <a href="#!" class="hb">HY Pants Striped White Black </a>
+              </li>
+              <li>
+                <a href="#!" class="hb">white stump t-shirt</a>
+              </li>
+              <!--2-->
+              <li>
+                <a href="#!" class="hb">gray T-zorC Shoes</a>
+              </li>
+              <li>
+                <a href="#!" class="hb">floal bgro high heels</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class=" copyright p-3" style="background-color: black;">
+        <div class="row d-flex justify-content-center dktau">
+          <div class="col-lg-6 tulisan d-flex justify-content-center">
+            © 2020 Copyright : &nbsp  
+            <a href="https://mdbootstrap.com/">VINZFA | Make Your Perfect Fashion</a>
+          </div>
+          <div class="col-lg-6 sosial-media d-flex justify-content-center">
+            <div class="row d-flex justify-content-center isi-dalam-f">
+              <div class="col-lg-2 d-flex justify-content-center">
+                <a href="#" class="media"><i class="bi bi-facebook"></i></a>
+              </div>
+              <div class="col-lg-2 d-flex justify-content-center">
+                <a href="#" class="media"><i class="bi bi-instagram"></i></a>
+              </div>
+              <div class="col-lg-2 d-flex justify-content-center">
+                <a href="#" class="media"><i class="bi bi-twitter"></i></a>
+              </div>
+              <div class="col-lg-2 d-flex justify-content-center">
+                <a href="#" class="media"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+              <div class="col-lg-2 d-flex justify-content-center">
+                <a href="#" class="media"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- AR Footer -->
+
+
+    <!-- Script untuk AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      once: false,
+    });
+    </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
