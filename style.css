@@ -5,7 +5,7 @@
 }
 /* navbar */
 .navbar{
-	background: white;
+	background-color: rgba(255,255,255,1);
 }
 .navbar .navbar-nav .nav-item a{
 	color: black;
@@ -17,6 +17,15 @@
 }
 .navbar .navbar-nav{
 	padding-right: 100px;
+}
+.navbar .container-fluid img:hover{
+	filter: brightness(80%);
+}
+.navbar .container-fluid button{
+	border-radius: 0%;
+	border: none;
+	color: #FEC89A;
+
 }
 /*jumbotron*/
 .jumbotron{
@@ -91,6 +100,11 @@
 	font-size: 22px;
 	font-weight: 500;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.isi-content a:hover{
+	background: linear-gradient(to right, #FEC89A, #FFB5A7);
+	border-radius: 0%;
+	color: white;
 }
 .isi-content hr{
 	width: 94%;
@@ -291,7 +305,7 @@
 .footer-isi{
 	width: 220px;
 	margin: auto;
-  	background-color:rgba(255,255,255,0.2);
+  	background-color: rgba(255,255,255,0.2);
   	padding: 15px;
 }
 footer{
@@ -322,6 +336,13 @@ footer{
 .dktau .col-lg-6{
 	padding-bottom: 15px;
 }
+/*webkit scrollvbar*/
+::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #FFB5A7, #FEC89A);
+}
 /*deskop version*/
 @media (min-width: 992px) {	
 	.navbar .container-fluid img{
@@ -338,6 +359,10 @@ footer{
 	.product-card{
 		padding-bottom: 2rem;
 		padding: 0 9rem 1rem 9rem;
+	}
+	.sesi2{
+		padding-bottom: 2rem;
+		padding: 0 0rem 1rem 0rem;
 	}
 	/*contact*/
 	.contact-isi2{
