@@ -4,12 +4,19 @@
 	font-family: 'Poppins', sans-serif;
 }
 /* navbar */
+.navbar .container-fluid .navbar-brand{
+	font-family: 'Dosis', sans-serif;
+	font-size: 25px;
+	letter-spacing: 5px;
+	font-weight: 600;
+	background: -webkit-linear-gradient(45deg, #FFB5A7, #FEC89A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;
+}}
 .navbar{
 	background-color: rgba(255,255,255,1);
 }
 .navbar .navbar-nav .nav-item a{
 	color: black;
-	font-size: 18px;
+	font-size: 20px;
 	margin-right: 20px;
 }
 .navbar .navbar-nav .nav-item a:hover{
@@ -21,11 +28,8 @@
 .navbar .container-fluid img:hover{
 	filter: brightness(80%);
 }
-.navbar .container-fluid button{
-	border-radius: 0%;
+.navbar .container-fluid .navbar-toggler span{
 	border: none;
-	color: #FEC89A;
-
 }
 /*jumbotron*/
 .jumbotron{
@@ -38,8 +42,8 @@
 	color: white;
 	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
-	font-size: 60px;
-	padding-top: 10rem;
+	font-size: 52px;
+	padding-top: 12rem;
 }
 .jumbotron .jumbotron-isi h3{
 	color: #FEC89A;
@@ -90,7 +94,7 @@
 /*style*/
 #style{
 	background-color: #F5F5F5;
-	padding: 4.7rem 0 5rem 0; 
+	padding: 4.7rem 0 7rem 0; 
 }
 .isi-content a{
 	background: linear-gradient(to right, #FFB5A7, #FEC89A);
@@ -302,12 +306,6 @@
 .footer-isi h5{
 	color: white;
 }
-.footer-isi{
-	width: 220px;
-	margin: auto;
-  	background-color: rgba(255,255,255,0.2);
-  	padding: 15px;
-}
 footer{
 	background: linear-gradient(to right, #FFB5A7, #FEC89A);
 }
@@ -343,18 +341,19 @@ footer{
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, #FFB5A7, #FEC89A);
 }
+
 /*deskop version*/
 @media (min-width: 992px) {	
-	.navbar .container-fluid img{
-		padding-left: 100px;
-		width: 167px;
-		height: 43px;
+	.navbar .container-fluid .navbar-brand{
+		padding-left: 120px;
 	}
 	.jumbotron .jumbotron-isi{
 		padding-top: 3.5rem;
 	}
 	.jumbotron .jumbotron-isi h1{
-		width: 40%;
+		text-align: left;
+		font-size: 80px;
+		padding-top: 8rem;
 	}
 	.product-card{
 		padding-bottom: 2rem;
@@ -386,4 +385,5 @@ footer{
 	.dktau .col-lg-6{
 		padding-bottom: 0px;
 	}
+
 }
